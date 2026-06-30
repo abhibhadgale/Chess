@@ -1,0 +1,51 @@
+.square {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1rem;
+  cursor: pointer;
+  background-clip: padding-box;
+}
+
+.square:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: -2px;
+}
+
+.square :global(.pieceImage) {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.light {
+  background-color: #f5e7c7;
+}
+
+.dark {
+  background-color: #8b5e3c;
+}
+
+.selected {
+  box-shadow: inset 0 0 0 3px #f59e0b;
+}
+
+.legal::after {
+  content: '';
+  position: absolute;
+  width: 28%;
+  height: 28%;
+  border-radius: 50%;
+  background-color: rgba(22, 163, 74, 0.8);
+  box-shadow: 0 0 0 0.18rem rgba(22, 163, 74, 0.18);
+}
+
+.legal {
+  box-shadow: inset 0 0 0 2px rgba(22, 163, 74, 0.25);
+}

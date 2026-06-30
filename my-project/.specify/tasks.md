@@ -295,4 +295,4 @@
 - **Manual verification steps**:
   1. Play a complete local game from start to finish.
   2. Confirm legal and illegal moves behave correctly.
-  3. Confirm restart and endgame states behave as expected.
+  3. Confirm restart and endgame states behavior
